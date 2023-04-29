@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Styles/style.css">
+  <title>Students</title>
+</head>
+
+<body>
+  <header>
+    <h1>NY SCHOOL</h1>
+    <h2>Students Data</h2>
+  </header>
+  <table>
+    <thead>
+      <tr>
+        <%for(let i=1;i<keys.length;i++){ %>
+          <th>
+            <%=keys[i] %>
+          </th>
+          <% } %>
+      </tr>
+    </thead>
+    <tbody>
+      <%for(let i=1;i<data.length;i++){ %>
+        <tr>
+          <td>
+            <%=data[i].id %>
+          </td>
+          <td>
+            <%=data[i].first_name %>
+          </td>
+          <td>
+            <%=data[i].last_name %>
+          </td>
+          <td>
+            <%=data[i].date_of_birth %>
+          </td>
+          <td>
+            <%=data[i].gender %>
+          </td>
+          <td>
+            <%=data[i].status %>
+          </td>
+          <td>
+            <%=data[i].entry_academic_period %>
+          </td>
+          <td>
+            <%=data[i].hs_city %>
+          </td>
+          <td>
+            <%=data[i].hs_state %>
+          </td>
+          <td>
+            <%=data[i].hs_zip %>
+          </td>
+        </tr>
+        <% } %>
+    </tbody>
+  </table>
+</body>
+
+</html>

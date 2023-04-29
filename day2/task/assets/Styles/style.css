@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header h1, header h2 {
+  color: white;
+  font-weight: 700;
+  padding: 10px;
+  text-align: center;
+}
+header h1 {
+  background-color: blueviolet;
+}
+header h2 {
+  color: #0A4D68;
+  font-size: 1.7rem;
+}
+table {
+  border-spacing: 1px;
+  margin: 20px auto 0;
+}
+thead tr {
+  background-color: #0A4D68;
+  color: #FFEBEB;
+  font-size: 1.2rem;
+}
+table tr th {
+  padding: 10px;
+}
+
+table tr td{
+  padding: 10px;
+  font-size: 1.1rem;
+}
+table tbody tr:nth-child(even) {
+  background-color: #088395;
+  color: #FFF9DE;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #A6D0DD;
+}
